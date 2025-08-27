@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* small extra polish */
+html,body,#__next { height: 100%; }
+body { background: linear-gradient(180deg,#f8fffb 0%, #eef8f3 100%); }
+
+/* helper classes used by components */
+.input { @apply border-gray-200 rounded-md p-2 w-full; }
+.card { @apply bg-white rounded-xl p-4 shadow-sm; }
+.small { font-size: .875rem; color: #6b7280; }
+.fade-up { transform-origin: top; }
+
+/* make images not overflow */
+img { max-width: 100%; display:block; }
